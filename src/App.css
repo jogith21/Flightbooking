@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #222;
+}
+
+.navbar {
+  background: #123c69;
+  color: white;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #dceeff;
+}
+
+.hero h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+button {
+  background: #123c69;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #1d5d99;
+}
+
+.about {
+  padding: 50px 8%;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 30px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.features div {
+  background: white;
+  padding: 25px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.features h3 {
+  margin-bottom: 10px;
+}
+
+.page {
+  padding: 50px 8%;
+  text-align: center;
+  min-height: 70vh;
+}
+
+.page h1 {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+}
+
+.flight-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.flight-card {
+  background: white;
+  width: 280px;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.flight-card h3 {
+  margin-bottom: 15px;
+}
+
+.flight-card p {
+  margin: 10px 0;
+}
+
+.flight-card button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.route {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.booking-page {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.booking-page h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.selected-flight {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.selected-flight p {
+  margin: 10px 0;
+}
+
+.booking-form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.booking-card {
+  background: white;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 500px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card p {
+  margin: 8px 0;
+}
+
+footer {
+  background: #123c69;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 700px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .flight-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
